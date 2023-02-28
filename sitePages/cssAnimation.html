@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--
+Name: Mrs Langdon
+Course:Computer Science II
+Assignment: OCVTS & Classroom policies
+Date: September 6, 2022 - September 12, 2022
+Team:
+-->
+<HTML>
+
+<head>
+
+  <script src="https://kit.fontawesome.com/377e2797db.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Web Dev 2022</title>
+</head>
+
+<body class="tan">
+
+  <header style="background-color:var(--tan);">
+    <h1><a href="/index.html" id="home">Computer Science II</a></h1>
+    <h1>Website Development</h1>
+    <nav>
+
+      <div class="dropdown">
+        <button class="dropbtn">OCVTS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">OCVTS Policies</a>
+          <a href="https://www.ocvts.org/" target="_blank">OCVTS Website</a>
+          <a href="https://www.ocvts.org/_files/ugd/c9df80_9c7650f338404976acd22174f94b1ed2.pdf" target="_blank">Student
+            Handbook</a>
+
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">HTML
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://www.w3schools.com/tags/default.asp" target="_blank">Tag Descriptions</a>
+          <a href="#">Link 5</a>
+          <a href="#">Link 6</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">CSS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://www.w3schools.com/cssref/index.php" target="_blank">CSS Properties</a>
+          <a href="#">Link 5</a>
+          <a href="#">Link 6</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">JS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Intro To JavaScript</a>
+          <a href="#">Link 5</a>
+          <a href="#">Link 6</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">PROJECTS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="jscontainer 2dTransform purple">
+      <div class="js_title">
+        <h2>2D Transform</h2>
+      </div>
+      <div class="js_text">
+        <h3>Transform Methods:</h3>
+        
+          <dt>translate(<i>xDistance, yDistance</i>)</dt>
+          <dd>- moves an element on the x or y axis</dd>
+          <dt>rotate(<i>deg</i>)</dt>
+          <dd>- rotates an element</dd>
+          <dt>scale(<i>xDirection, yDirection</i>)</dt>
+          <dd>- increases or decreases an element's size in the specified direction</dd>
+        <dt>skew(<i>xAngle, yAngle</i>)</dt>
+          <dd>- skews an element along the x or y axis</dd>
+        <dt>matrix</dt>
+          <dd>- takes 6 transform method values. scaleX(), skeyY(), skewX(), scaleY(), translateX(), and translateY() </dd>
+        </dl>
+      </div>
+      <div class=js_mm>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AaQEML4F1II" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="js_title">
+        <h2>Samples of 2D Transformations</h2>
+      </div>
+      <div class="animGrid">
+        <img src="/images/translate.PNG">
+        <img src="/images/rotate.PNG">
+        <img src="/images/scale.PNG">
+        <img src="/images/skew.PNG">
+    </div>
+       <div>
+
+         
+       </div> 
+
+    </section>
+    <section class="jscontainer userInput green">
+      <div class="js_title">
+        <h2>User Input</h2>
+      </div>
+      <div class="js_text">
+
+        <dl>
+          <h3>document.get...:</h3>
+          <dt>document.getElementById("elementId");</dt>
+          <dd>- returns the element with the id specified</dd>
+          <dt>document.getElementByTagName("tagName");</dt>
+          <dd>- returns all the tags of a given type</dd>
+          <dt>document.getElementByClassName("elementClass");</dt>
+          <dd>- returns all the elements with the class specified</dd>
+        </dl>
+        <h3>.innerHTML:</h3>
+        <p>Tells us that we are accessing the HTML and changing it.</p>
+      </div>
+      <div class="js_mm">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8EFnZkQHZ_4"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="js_title">
+        <h2>Let's work with user input</h2>
+      </div>
+      <div class="js_text">
+        <ul>
+          <li>We already have a variable of type const with the name price and set it to 11.99; </li>
+          <li>We also have a variable of type let with the name quantity;</li>
+          <li>Now, let's ask the user how many they would like</li>
+          <li>Assign the value 5 to the variable quantity.</li>
+
+        </ul>
+
+        <button onclick="userInput()">result</button>
+        <script src="/script.js"></script>
+        <p>Your total is $<span id="total">0.00<span>.</span></p>
+      </div>
+<div>
+  <img src="/images/userInputSample.JPG">
+</div>
+
+    </section>
+    <section class="jscontainer dom purple">
+      <div class="js_title">
+        <h2>DOM</h2>
+      </div>
+      <div class="js_text">
+        <h3>What is the DOM?</h3>
+        <ul>
+        <li>A programming interface that represents HTML files in a way that is readable by other programming languages.</li>
+          <li>A tree of HTML objects.</li>
+          <li>How we access HTML elements to change them with javaScript.</li>
+          <li>A W3C standard fro accessing documents.</li>
+          <li></li>
+        </ul>
+      </div>
+      <div class=js_mm>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LgDdOmtDWgg" title="Web Development 1.2b - Using the DOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="js_title">
+        <h2>Let's use the DOM</h2>
+      </div>
+      <div class="js_text">
+       <dl>
+       <h3>Key terms</h3>
+        
+       <dt>document.getElementById("")</dt>
+          <dd>Method to access the HTML element with the specified id. </dd>
+        <dt>document.getElementsByClassName("")</dt>
+          <dd>Method that returns an array-like collection of HTML elements with the specified class. </dd>
+        <dt>document.querySelector("")</dt>
+           <dd>Method that returns the first occurrence of the sepcified selector. </dd>
+       <dt>document.querySelectorAll("")</dt>
+      
+       <dd>Method that returns an array-like list of all occurrencesthe sepcified selector. </dd>
+        <dt>innerHTML</dt>
+          <dd>A property of an HTML element </dd>
+        
+        
+
+        </dl>
+<!--         <button onclick="sample()">result</button>
+      
+        <p>Your total is $<span id="tot">0.00<span>.</span></p>
+       -->
+        </div>
+      <div id="domQuiz">
+        <p><strong>Question One:</strong> What is the Document Object Model?</p>
+        <p id="ans1"></p>
+        <p><strong>Question Two:</strong> What would be printed to the console as the result of the call document.body.p? </p>
+        <p id="ans2"></p>
+        <p><strong>Question Three:</strong> What will be printed to the screen if we run the following code?<br>
+        var list = document.getElementsByTagName("h1");
+        document.write(list[2].innerHTML);</p>
+        <p id="ans3"></p>
+      </div>
+
+    </section>
+    <section class="jscontainer arrays green">
+      <div class="js_title">
+        <h2>Arrays</h2>
+      </div>
+      <div class="js_text">
+
+        <dl>
+          <h3>Ways to declare arrays</h3>
+          <dt>Constructor</dt>
+          <dd>- const NUMS = new Array(1, 2, 3, 4, 5)</dd>
+          <dt>Array literal</dt>
+          <dd>- const NUMS = [1, 2, 3, 4, 5]</dd>
+          <dt>Different data types</dt>
+          <dd>- const NUMS = [‘one’, true, 3, ‘for’, 5];</dd>
+          
+        </dl>
+        
+      </div>
+      <div class=js_mm>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tI_tIZFyKBw?start=3825&end=5138" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="js_title">
+        <h2></h2>
+      </div>
+      <div class="js_text">
+       <dl>
+          
+          <h3>Manipulating the array</h3>
+          <dt>Access an item by index</dt>
+          <dd>- let num1 = NUMS[0];</dd>
+          <dt>Add to the end of an array</dt>
+          <dd>- NUMS[5] = 'six'</dd>
+         <dt>Find the length of an array</dt>
+          <dd>- NUMS.length;</dd>
+          <dt>Add to the end of an array of unknown length</dt>
+          <dd>- NUMS.push('six')</dd>
+         <dt>Add to the beginning of an array</dt>
+          <dd>- NUMS.unshift(0);</dd>
+         <dt>Remove the last item from an array</dt>
+          <dd>- NUMS.pop();</dd>
+         <dt>Get the index of an array</dt>
+          <dd>- NUMS.indexOf(3);</dd>
+        </dl>
+        <script src="/script.js"></script>
+        
+      </div>
+<div>
+
+</div> 
+
+
+    </section>
+     
+  <!--         <script src="/script.js"></script> -->
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</HTML>

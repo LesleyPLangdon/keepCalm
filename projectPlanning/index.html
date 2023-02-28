@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Project Planning</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="grid-container">
+    <section id="scope" class="grid-item">
+      <h2>Define the scope and purpose of the project.</h2>
+      <p>Before we start planning the application, we need to define the scope and purpose of the project. What do you want the application to do? What problem is it solving for the client or user? What features and functionality will the application have?</p>
+  <div class="grid-container">    
+          <div class="column">
+<h3>Project Description</h3>
+            <p>In this section, you should describe the website project in detail. Be specific about what the website is about, its purpose, and its target audience. This section should include:</p>
+            <ul>
+              <li>Overview of the project: A brief description of the project, its goals, and objectives</li>
+              <li>Target audience: Who the website is intended for, their needs, and how the website will meet those needs</li>
+              <li>Functionality: A list of features that the website should include to meet the needs of the target audience</li>
+              <li>Content: A description of the type of content that will be on the website and how it will be presented</li>
+              <li>Design: A description of the look and feel of the website, including the color scheme, font, and layout</li>
+            </ul>
+            
+          </div>
+          <div class="column">
+            <h3>Enter Details Here</h3>
+      <form method="get" id="projectForm">
+        <label for="firstName">Your First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+        <label for="lastName" required>Your Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+        <label for="projectName" required>Project Name:</label>
+        <input type="text" id="projectName" name="projectName"><br>
+
+        <label for="projectDescription" required>Project Description:</label>
+        <textarea id="projectDescription" name="projectDescription">Overview of project: Target audience: Functionality: Content: Design:</textarea><br>
+
+        <label for="projectDeadline">Deadline:</label>
+        <input type="date" id="projectDeadline" name="projectDeadline"><br>
+
+        <label for="projectBudget">Budget:</label>
+        <input type="number" id="projectBudget" name="projectBudget"><br>
+
+        <label for="projectType">Project Type:</label>
+        <select id="projectType" name="projectType">
+          <option value="web">Web Development</option>
+          <option value="mobile">Mobile Development</option>
+          <option value="game">Game Development</option>
+        </select><br>
+
+        <label for="projectFeatures" required>Project Features:</label>
+        <textarea id="projectFeatures" name="projectFeatures" >Navigation: Forms: Search funtionality: Media: Social media integration: E-commerce functionality:</textarea><br>
+
+        <button type="submit" name="create-btn">Create Project</button>
+        <button type="button" name="download" id="download-btn">Download Project</button>
+
+      </form>
+            </div>
+          <div class="column">
+<h3>Project Features</h3>
+            <p>In this section, you should outline the specific features that the website will have. Be clear and concise about what the website will be able to do. This section should include:</p>
+            <ul>
+              <li>Navigation: How users will navigate the website and find the information they need</li>
+              <li>Forms: Whether the website will have any forms and what they will be used for</li>
+              <li>Search functionality: Whether users will be able to search for specific information on the website</li>
+              <li>Media: Whether the website will include images, videos, or other types of media</li>
+              <li>Social media integration: Whether the website will have social media buttons or links</li>
+              <li>E-commerce functionality: Whether the website will have an online store and how it will be set up</li>
+            </ul>
+         </div> </div>
+    </section>
+  </div>
+
+
+  <div class="grid-container">
+    <section id="wireframe" class="grid-item">
+      <div class="section">
+        <h2>Wireframes, Flowcharts, and DOM trees</h2>
+        <h3>First, some definitions: </h3>
+        <div class="grid-container">
+          <div class="column">
+            <h3>Wireframes:</h3>
+            <p>A wireframe is a visual guide that represents the skeletal framework of a website or application. It
+              outlines the basic layout, structure, and functionality of a project without going into specific details
+              such as color schemes or specific graphics. Wireframes provide a simple way to convey the overall design
+              and flow of a project, and can help ensure that all stakeholders are on the same page before moving into
+              more detailed design phases. By creating wireframes, designers and developers can save time by identifying
+              potential issues before they become more costly problems.</p>
+
+            <ol>
+              Steps to create a wireframe:
+              <li>Determine the purpose and audience of the website</li>
+              <li>Identify the main content areas and prioritize their importance</li>
+              <li>Sketch out rough layouts and design concepts</li>
+              <li>Choose a wireframing tool or create a template using pen and paper</li>
+              <li>Add in specific content and design elements, such as navigation menus, images, and text</li>
+              <li>Review and refine the wireframe with stakeholders and team members</li>
+            </ol>
+          </div>
+          <div class="column">
+            <h3>Flowcharts:</h3>
+            <p>A flowchart is a diagram that uses symbols and arrows to depict the sequence of steps in a process or
+              workflow. Flowcharts are useful for mapping out complex processes and identifying potential bottlenecks or
+              areas for improvement. By creating a flowchart, developers can gain a better understanding of the
+              structure and flow of a project, and can identify potential issues or areas for optimization early on in
+              the development process. Flowcharts can also help communicate the project's structure to stakeholders and
+              team members.</p>
+
+            <ol>
+              Steps to create a flowchart:
+              <li>Identify the main processes or activities of the system or website</li>
+              <li>Determine the flow and sequence of these processes, including inputs, outputs, and decision points
+              </li>
+              <li>Sketch out a rough flowchart with basic shapes, such as rectangles for processes and diamonds for
+                decision points</li>
+              <li>Choose a flowcharting tool or create a template using pen and paper</li>
+              <li>Add in specific details and elements, such as input and output data, conditions, and loops</li>
+              <li>Review and refine the flowchart with stakeholders and team members</li>
+            </ol>
+          </div>
+          <div class="column">
+            <h3>DOM Tree:</h3>
+            <p>The Document Object Model (DOM) is a programming interface for web documents. In essence, it represents
+              the web page as a hierarchical tree structure, where each node represents a part of the document, such as
+              an element or an attribute. The DOM provides a standardized way to access and manipulate web pages using
+              programming languages such as JavaScript. By working with the DOM, developers can create dynamic and
+              interactive web pages that respond to user interactions in real-time.</p>
+
+            <ol>
+              Steps to create a DOM tree:
+              <li>Identify the main content areas and elements of the website, such as headings, paragraphs, images, and
+                navigation menus</li>
+              <li>Determine the hierarchy of these elements and how they relate to each other</li>
+              <li>Sketch out a rough DOM tree with boxes representing each element and lines connecting them to show the
+                relationships</li>
+              <li>Choose a tool for creating a more detailed DOM tree, such as a text editor with HTML or a DOM
+                visualization tool</li>
+              <li>Add in specific details, such as classes, IDs, and attributes, and ensure that the tree structure is
+                accurate and complete</li>
+              <li>Review and refine the DOM tree with stakeholders and team members</li>
+            </ol>
+          </div>
+        </div>
+        <h3>Why and how to use these tools:</h3>
+        <p>Wireframes and flowcharts provide a way to plan out the structure and flow of a project before development
+          begins, while the DOM provides a way to manipulate that structure and flow using programming languages. By
+          creating wireframes and flowcharts, developers can identify potential issues and optimize the project's
+          structure before it is built. Once development begins, the DOM provides a standardized way to interact with
+          and manipulate the project's structure in real-time, allowing developers to create dynamic and responsive
+          websites and applications more efficiently.</p>
+        <p>For wireframes and flowcharts, we recommend using Google Drawings, which is a free and easy-to-use tool that
+          is accessible from your Google Drive. Here's a brief tutorial on how to use it:</p>
+        <ol>
+          <li>Open Google Drive and create a new document</li>
+          <li>Select "Google Drawings" from the "New" menu</li>
+          <li>Start creating your wireframe or flowchart by adding shapes, text, and lines</li>
+          <li>Use the "Arrange" menu to change the order, alignment, and spacing of your elements</li>
+          <li>Use the "Line" menu to add arrows and adjust the thickness of your lines</li>
+          <li>When you're finished, save your wireframe or flowchart to your Google Drive and share it with your team
+          </li>
+        </ol>
+        <p>Here are some additional resources for wireframes and flowcharts:</p>
+
+      </div>
+    </section>
+  </div>
+
+  <div class="grid-container">
+    <section id="pseudocode" class="grid-item">
+      <h2>Pseudocode</h2>
+      <p>Pseudocode is a way of representing programming logic using a mixture of natural language and programming
+        language-like syntax. It is not meant to be executed as code, but rather serves as a tool for planning and
+        communicating the logic of a program.</p>
+      <div class="grid-container">
+        <div class="column">
+          <h3>Making a Sandwich</h3>
+          <ol>
+            <li>Get bread</li>
+            <li>Get mayonaise or other condiment</li>
+            <li>Add condiment to bread</li>
+            <li>Get meat and cheese</li>
+            <li>Add meat and cheese to bread</li>
+            <li>Get lettuce and tomato</li>
+            <li>Add lettuce and tomato to sandwich</li>
+            <li>Cut sandwich in half</li>
+            <li>Put on plate</li>
+          </ol>
+        </div>
+        <div class="column">
+          <h3>Mowing the grass</h3>
+          <ol>
+            <li>Clear toys form lawn (pick up dog poop)</li>
+            <li>Get lawnmower</li>
+            <li>Check oil and gas levels</li>
+            <li>Start lawnmower</li>
+            <li>Begin mowing along one edge of the yard</li>
+            <li>Move in rows back and forth across the yard</li>
+            <li>When you get to the end of the yard, turn mower around</li>
+            <li>When you have mowed the whole lawn, turn off lawnmower</li>
+            <li>clean grass from underside of lawnmower</li>
+            <li>Put lawnmower away</li>
+
+          </ol>
+        </div>
+        <div class="column">
+          <canvas id="lawn" width="300" height="200"></canvas>
+      <button id="start-btn">Start</button>
+        </div>
+        <div class="column">
+          <h3>Create an array of hexadecimal place values - for loop</h3>
+          <pre>
+for each item in a collection:
+    do something with the item
+          </pre>
+        <pre>
+initialize an empty array called "hexPlace"
+initialize a variable called "base" to 16
+initialize a variable called "power" to 0
+
+repeat the following steps 8 times:
+    set "value" to " base" raised to the power of "power"
+    add "value" to the end of "hexPlace"
+    increment "power" by 1
+        </pre>
+         
+        </div>
+        <div class="column">
+          <h3>Pick the right coat - if/else</h3>
+         <ol>
+  <li>Check the temperature outside:</li>
+  <li>If temperature is below 40 degrees:</li>
+           <ol>
+             <li>Wear a heavy coat</li>
+           </ol>
+           <li>Else if temperature is between 40 and 60 degrees</li>
+           <ol>
+             <li>Wear a light coat </li>
+           </ol>
+           <li>Else if temperature is above 60 degrees</li>
+           <ol>
+             <li>No coat needed</li>
+           </ol>
+           <li>Output coat selected</li>
+           <ol>
+            
+           
+           </ol>
+            </ol>
+        </div>
+
+      </div>
+      
+    </section>
+  </div>
+  <div class="grid-container">
+    <section id="code" class="grid-item">
+      <h2>Code</h2>
+    </section>
+  </div>
+  <div class="grid-container">
+    <section id="test" class="grid-item">
+      <h2>Test and debug</h2>
+    </section>
+  </div>
+
+  <div class="grid-container">
+    <section id="refine" class="grid-item">
+      <h2>Refine and improve</h2>
+    </section>
+  </div>
+  <script src="script.js"></script>
+
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

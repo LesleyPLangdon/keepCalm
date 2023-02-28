@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+/* */  overflow: hidden; 
+ 
+}
+#grass {
+  height: 100vh;
+  width: 100vw;
+   background-color: green;
+  background: url(/./images/field3.jpg);
+  background-position-y: center;
+}
+#jumpContainer {
+/*  background-color: blue; */
+  height: 20vh;
+  width: 100vw;
+/*   margin-top: 50vh; */
+  margin-top: 65vh;
+  position: absolute;
+ z-index: 2; 
+    font-size: 100px;
+  display: flex;
+ transform-style: preserve-3d;
+}
+
+.horse {
+font-size: 100px;
+transform: rotateY(180deg)   translateY(30px) ;
+   z-index: 0;
+  animation: runCourse 20s linear 2s infinite;
+} 
+.tree1 {
+  font-size: 200px;
+   transform: scaleY(2) translateY(-110px);
+  z-index: 1; 
+}
+.tree2 {
+  font-size: 100px;
+  z-index: -1; 
+   transform: translateY(-20px);
+}
+.hurdle {
+  font-size: 80px;
+  transform: translateY(50px)  rotateY(70deg);
+  z-index: -1;
+  perspective: 100px; 
+}
+.flower {
+  font-size: 20px;
+   transform: translateY(140px);
+z-index: 1;
+}
+.flower2 {
+  font-size: 30px;
+  transform: translateY(140px) translateX(-10px);
+  z-index: 1;
+}
+.flowerPair {
+  transform: translateX(-30px);
+  display: flex;
+  z-index: 1;
+}
+.house {
+  font-size: 400px;
+  transform: translateY(-400px);
+  z-index: -1;
+}
+.flowerGroup2
+{
+  display: flex;
+  transform: translateX(-1100px) translateY(-60px);
+  z-index: -1;
+}
+.flowerGroup3
+{
+  display: flex;
+  transform: translateX(-1000px);
+}
+@keyframes runCourse {
+  0% {
+    transform: rotateY(180deg) translateY(30px);
+  }
+  25% {
+     transform: rotateY(180deg) translateX(-280px)  translateY(30px);
+  }
+  28% {
+    transform: rotateY(180deg) translateX(-330px) translateY(-80px);
+  }
+   29% {
+    transform: rotateY(180deg) translateX(-350px) translateY(-90px);
+  }
+   30% {
+    transform: rotateY(180deg) translateX(-400px) translateY(-80px);
+  }
+  33% {
+    transform: rotateY(180deg) translateX(-440px) translateY(30px);
+  }
+  40% {
+     transform: rotateY(180deg) translateX(-520px)  translateY(30px);
+  }
+  43% {
+    transform: rotateY(180deg) translateX(-590px) translateY(-90px);
+  }
+  52% {
+    transform: rotateY(180deg) translateX(-660px) translateY(30px);
+  }
+70% {
+     transform: rotateY(180deg) translateX(-1170px)  translateY(30px);
+  }
+  73% {
+    transform: rotateY(180deg) translateX(-1240px) translateY(-90px);
+  }
+  82% {
+    transform: rotateY(180deg) translateX(-1310px) translateY(30px);
+  }
+ 
+  
+  100% {
+    transform: rotateY(180deg) translateX(-1800px) translateY(30px);
+  }
+  
+}

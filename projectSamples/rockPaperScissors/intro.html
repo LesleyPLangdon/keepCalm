@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script src="https://kit.fontawesome.com/377e2797db.js" crossorigin="anonymous"></script>
+  <!--   <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="stylePlanets.css">
+  <link rel="stylesheet" href="/./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+<header style="background-color:var(--tan);">
+    <h1><a href="/./index.html">Computer Science II</a></h1>
+    <h1><a href="/./index.html">Website Development</a></h1>
+    <nav>
+      
+     <div class="dropdown">
+        <button class="dropbtn">PROJECTS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Slide Show</a>
+          <a href="/rotatingPlanets/rotatingPlanets.html" target="_blank">Rotating Planets</a>
+          <a href="projectSamples/rockPaperScissors/intro.html">Rock Paper Scissors</a>
+      <a href="projectSamples/calc.html">Calculator</a>
+        </div>
+      </div> 
+    </nav>
+
+  </header>
+  <main>
+    <section class="jscontainer rps1 purple">
+      <div class="js_title">
+        <h2><a href="rps1.html">Beginner Rock Paper Scissors</a></h2>
+      </div>
+      <div class="js_text">
+        <h3></h3>
+        <ul>
+        <li>getElementById</li>
+          <li>querySelectorAll</li>
+          <li>addEventListener</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class=js_mm>
+        
+      </div>
+      <div class="js_title">
+        <h2></h2>
+      </div>
+      <div class="js_text">
+       <dl>
+       <h3></h3>
+        
+       <dt>document.getElementById("")</dt>
+          <dd>Method to access the HTML element with the specified id. </dd>
+        <dt>document.getElementsByClassName("")</dt>
+          <dd>Method that returns an array-like collection of HTML elements with the specified class. </dd>
+        <dt>document.querySelector("")</dt>
+           <dd>Method that returns the first occurrence of the sepcified selector. </dd>
+       <dt>document.querySelectorAll("")</dt>
+      
+       <dd>Method that returns an array-like list of all occurrencesthe sepcified selector. </dd>
+        <dt>innerHTML</dt>
+          <dd>A property of an HTML element </dd>
+        
+        
+
+        </dl>
+<!--         <button onclick="sample()">result</button>
+      
+        <p>Your total is $<span id="tot">0.00<span>.</span></p>
+       -->
+        </div>
+      <div id="domQuiz">
+        <p><strong>Question One:</strong> What is the Document Object Model?</p>
+        <p id="ans1"></p>
+        <p><strong>Question Two:</strong> What would be printed to the console as the result of the call document.body.p? </p>
+        <p id="ans2"></p>
+        <p><strong>Question Three:</strong> What will be printed to the screen if we run the following code?<br>
+        var list = document.getElementsByTagName("h1");
+        document.write(list[2].innerHTML);</p>
+        <p id="ans3"></p>
+      </div>
+
+    </section>
+<!--     <section class="jscontainer variables purple">
+      <div class="js_title">
+        <h2>Variables</h2>
+      </div>
+      <div class="js_text">
+        <h3>Variable declaration:</h3>
+        <p> var a; <br> var a = 12;<br>var is the variable type or keyword<br>
+          a is the variable name<br>
+          = is the assignment operator<br>
+          12 is the variable value</p>
+        <dl>
+          <h3>Variable types:</h3>
+          <dt>var</dt>
+          <dd>- generic variable used pre 2015</dd>
+          <dt>let</dt>
+          <dd>- variable type to use if you want to reasign</dd>
+          <dt>const</dt>
+          <dd>- variable type that cannot be reasigned</dd>
+        </dl>
+      </div>
+      <div class=js_mm>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hdI2bqOjy3c?start=675&end=858"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="js_title">
+        <h2>Let's practice with variables</h2>
+      </div>
+      <div class="js_text">
+        <ul>
+          <li>Declare a variable of type const with the name price and set it to 11.99; </li>
+          <li>Declare a variable of type let with the name quantity;</li>
+          <li>Declare a variable of type let with the name total;</li>
+          <li>Assign the value 5 to the variable quantity.</li>
+
+        </ul>
+        <button onclick="sample()">result</button>
+        <!--         <script src="/script.js"></script> -->
+        <p>Your total is $<span id="tot">0.00<span>.</span></p>
+      </div>
+      <div>
+        <img src="/images/functionSample.JPG">
+      </div>
+
+    </section> -->
+<!--     <section class="jscontainer userInput green">
+      <div class="js_title">
+        <h2>User Input</h2>
+      </div>
+      <div class="js_text">
+
+        <dl>
+          <h3>document.get...:</h3>
+          <dt>document.getElementById("elementId");</dt>
+          <dd>- returns the element with the id specified</dd>
+          <dt>document.getElementByTagName("tagName");</dt>
+          <dd>- returns all the tags of a given type</dd>
+          <dt>document.getElementByClassName("elementClass");</dt>
+          <dd>- returns all the elements with the class specified</dd>
+        </dl>
+        <h3>.innerHTML:</h3>
+        <p>Tells us that we are accessing the HTML and changing it.</p>
+      </div>
+      <div class=js_mm>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8EFnZkQHZ_4"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="js_title">
+        <h2>Let's work with user input</h2>
+      </div>
+      <div class="js_text">
+        <ul>
+          <li>We already have a variable of type const with the name price and set it to 11.99; </li>
+          <li>We also have a variable of type let with the name quantity;</li>
+          <li>Now, let's ask the user how many they would like</li>
+          <li>Assign the value 5 to the variable quantity.</li>
+
+        </ul>
+
+        <button onclick="userInput()">result</button>
+        <script src="/script.js"></script>
+        <p>Your total is $<span id="total">0.00<span>.</span></p>
+      </div>
+<div>
+  <img src="/images/userInputSample.JPG">
+</div>
+
+    </section> -->
+    
+  </main>
+</body>
+
+</html>  

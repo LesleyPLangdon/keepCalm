@@ -1,0 +1,53 @@
+/* Define a grid with three columns and three rows */
+      .grid-container {
+        display: grid;
+/*         grid-template-columns: auto auto auto; */
+         grid-template-columns: repeat(3, 1fr); /* 1fr is a fractional unit, it means that the column will take 1 fraction of the available space */
+        grid-template-rows:400px 400px 400px;
+        gap: 20px;
+      }
+
+      /* Style the grid items */
+      .grid-item {
+        background-color: #f1f1f1;
+        border: 1px solid #000000;
+        text-align: center;
+      }
+#projects {
+  grid-column: 1 / 4; /* this means that the item will start at column 1 and end at column 3 */
+  height: 300px;
+}
+/* Change the grid layout when the screen width is below 600px */
+      @media (max-width: 600px) {
+        .grid-container {
+          grid-template-columns: auto;
+          grid-template-rows: auto;
+        }
+      }
+header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav {
+        background-color: #eee;
+        text-align: center;
+        padding: 0.5em;
+      }
+
+      nav a {
+        color: #333;
+        text-decoration: none;
+        margin-right: 1em;
+      }
+
+      /* Style the sections */
+      section {
+        padding: 1em;
+      }
